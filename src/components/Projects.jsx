@@ -17,6 +17,17 @@ const projects = [
     image: "images/PIC1.png"
   },
   {
+    title: "ChatPDF - RAG on PDF",
+    date: "Jul 2025",
+    tech: "Langchain | Faiss | Streamlit | Gemini ",
+    description: "AI & RAG powered PDF analyzer with context-aware chatbot, semantic search, and document Q&A using Gemini and LangChain.",
+    links: [
+      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/ChatPDF.git" },
+      { label: "View Project", url: "https://drive.google.com/file/d/19nbqXjnFE1eLDlkEjwbKF35S6iNC4aOB/view?usp=drivesdk" }
+    ],
+    image: "images/PIC2.png"
+  },
+  {
     title: "Movie Ticket Booking System",
     date: "May 2024",
     tech: "React | Flask | Postgres | Bootstrap",
@@ -25,7 +36,7 @@ const projects = [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/MOVIE_TICKETS_BOOKING/blob/updated" },
       { label: "View Project", url: "https://drive.google.com/drive/folders/16VhZIcVPA2lbiQQFT-74fzWj9d_jyYY9" }
     ],
-    image: "images/PIC2.png"
+    image: "images/PIC3.png"
   },
   {
     title: "Python-to-C++ Converter",
@@ -36,7 +47,7 @@ const projects = [
       { label: "Github", url: "https://github.com/Kris-05/Python-to-Cpp.git" },
       { label: "View Project", url: "https://drive.google.com/file/d/1im8iIbC9sXzruylLwX_nygQazFxKYBCG/view?usp=drivesdk" }
     ],
-    image: "images/PIC3.png"
+    image: "images/PIC4.png"
   },
   {
     title: "GUI Apps using Tkinter",
@@ -47,7 +58,7 @@ const projects = [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/GUI_TKINTER.git" },
       { label: "View Project", url: "https://drive.google.com/drive/folders/1-DChbE4SCaPun6bWZWIgv3wy4vfeKRX3" }
     ],
-    image: "images/PIC4.png"
+    image: "images/PIC5.png"
   },
   {
     title: "Portfolio Website",
@@ -58,7 +69,7 @@ const projects = [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/balamurugan16sa.github.io.git" },
       { label: "View Project", url: "#" }
     ],
-    image: "images/PIC5.png"
+    image: "images/PIC6.png"
   }
 ];
 
