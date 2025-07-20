@@ -19,7 +19,7 @@ const projects = [
     {
     title: "ChatPDF - RAG on PDF, with OCR support",
     date: "Jul 2025",
-    tech: "Tesseract-OCR | Langchain | Faiss | Streamlit | Gemini ",
+    tech: "Tesseract | Langchain | Faiss | Streamlit | Gemini ",
     description: "AI & RAG powered PDF analyzer with context-aware chatbot, semantic search, and document Q&A using Gemini and LangChain.",
     links: [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/ChatPDF.git" },
