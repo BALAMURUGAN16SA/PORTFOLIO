@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Carousel, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -76,10 +76,21 @@ const projects = [
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
+  const [autoScroll, setAutoScroll] = React.useState(true);
 
   const handleSelect = (selectedIndex) => {
     setActiveIndex(selectedIndex);
   };
+
+  useEffect(() => {
+    let interval;
+    if (autoScroll) {
+      interval = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length);
+      }, 6000);
+    }
+    return () => clearInterval(interval);
+  }, [autoScroll, projects.length]);
 
   return (
     <div className="projects" id="projects" style={{
