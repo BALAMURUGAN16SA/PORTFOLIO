@@ -6,17 +6,6 @@ import "../styles/Projects.css";
 
 const projects = [
   {
-    title: "AI-Powered Nutrient Deficiency Detection and Improvement with Food Suggestions and Goal Tracking - APNP",
-    date: "Feb 2025",
-    tech: "React | Django | Streamlit | Gemini | Twilio",
-    description: "An AI-powered system that analyzes symptoms to identify nutrition deficiencies.It recommends meals, sets nutrient goals, and tracks progress over time.",
-    links: [
-      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/AI_Powered_NutriSupport.git" },
-      { label: "View Project", url: "https://drive.google.com/file/d/17nf1s8ljWITj304VAytsIYH42l7L4I_e/view?usp=drivesdk" }
-    ],
-    image: "images/PIC1.png"
-  },
-    {
     title: "ChatPDF - RAG on PDF, with OCR support",
     date: "Jul 2025",
     tech: "Tesseract | Langchain | Faiss | Streamlit | Gemini ",
@@ -25,6 +14,17 @@ const projects = [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/ChatPDF.git" },
       { label: "Live App", url: "https://dbaas-chat-pdf.streamlit.app/"},
       { label: "Demo Video", url: "https://drive.google.com/file/d/19nbqXjnFE1eLDlkEjwbKF35S6iNC4aOB/view?usp=drivesdk" }
+    ],
+    image: "images/PIC1.png"
+  },
+  {
+    title: "AI-Powered Nutrient Deficiency Detection and Improvement with Food Suggestions and Goal Tracking - APNP",
+    date: "Feb 2025",
+    tech: "React | Django | Streamlit | Gemini | Twilio",
+    description: "An AI-powered system that analyzes symptoms to identify nutrition deficiencies.It recommends meals, sets nutrient goals, and tracks progress over time.",
+    links: [
+      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/AI_Powered_NutriSupport.git" },
+      { label: "View Project", url: "https://drive.google.com/file/d/17nf1s8ljWITj304VAytsIYH42l7L4I_e/view?usp=drivesdk" }
     ],
     image: "images/PIC2.png"
   },
