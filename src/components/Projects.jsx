@@ -6,7 +6,7 @@ import "../styles/Projects.css";
 
 const projects = [
   {
-    title: "AI-Powered Nutrient Deficiency Detection and Improvement with Food Suggestions and Goal Tracking",
+    title: "AI-Powered Nutrient Deficiency Detection and Improvement with Food Suggestions and Goal Tracking - APNP",
     date: "Feb 2025",
     tech: "React | Django | Streamlit | Gemini | Twilio",
     description: "An AI-powered system that analyzes symptoms to identify nutrition deficiencies.It recommends meals, sets nutrient goals, and tracks progress over time.",
