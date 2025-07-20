@@ -23,8 +23,8 @@ const projects = [
     description: "AI & RAG powered PDF analyzer with context-aware chatbot, semantic search, and document Q&A using Gemini and LangChain.",
     links: [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/ChatPDF.git" },
-      { label: "Live", url: "https://dbaas-chat-pdf.streamlit.app/"},
-      { label: "View", url: "https://drive.google.com/file/d/19nbqXjnFE1eLDlkEjwbKF35S6iNC4aOB/view?usp=drivesdk" }
+      { label: "Live App", url: "https://dbaas-chat-pdf.streamlit.app/"},
+      { label: "Demo Video", url: "https://drive.google.com/file/d/19nbqXjnFE1eLDlkEjwbKF35S6iNC4aOB/view?usp=drivesdk" }
     ],
     image: "images/PIC2.png"
   },
