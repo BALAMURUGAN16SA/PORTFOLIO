@@ -6,6 +6,18 @@ import "../styles/Projects.css";
 
 const projects = [
   {
+    title: "ChatPDF - RAG on PDF, with OCR support",
+    date: "Jul 2025",
+    tech: "Tesseract-OCR | Langchain | Faiss | Streamlit | Gemini ",
+    description: "AI & RAG powered PDF analyzer with context-aware chatbot, semantic search, and document Q&A using Gemini and LangChain.",
+    links: [
+      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/ChatPDF.git" },
+      { label: "Live App", url: "https://dbaas-chat-pdf.streamlit.app/"},
+      { label: "Demo Video", url: "https://drive.google.com/file/d/19nbqXjnFE1eLDlkEjwbKF35S6iNC4aOB/view?usp=drivesdk" }
+    ],
+    image: "images/PIC1.png"
+  },
+  {
     title: "AI-Powered Nutrient Deficiency Detection and Improvement with Food Suggestions and Goal Tracking",
     date: "Feb 2025",
     tech: "React | Django | Streamlit | Gemini | Twilio",
@@ -13,18 +25,6 @@ const projects = [
     links: [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/AI_Powered_NutriSupport.git" },
       { label: "View Project", url: "https://drive.google.com/file/d/17nf1s8ljWITj304VAytsIYH42l7L4I_e/view?usp=drivesdk" }
-    ],
-    image: "images/PIC1.png"
-  },
-  {
-    title: "ChatPDF - RAG on PDF",
-    date: "Jul 2025",
-    tech: "Langchain | Faiss | Streamlit | Gemini ",
-    description: "AI & RAG powered PDF analyzer with context-aware chatbot, semantic search, and document Q&A using Gemini and LangChain.",
-    links: [
-      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/ChatPDF.git" },
-      { label: "Live App", url: "https://dbaas-chat-pdf.streamlit.app/"},
-      { label: "Demo Video", url: "https://drive.google.com/file/d/19nbqXjnFE1eLDlkEjwbKF35S6iNC4aOB/view?usp=drivesdk" }
     ],
     image: "images/PIC2.png"
   },
