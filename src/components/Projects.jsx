@@ -87,7 +87,7 @@ const Projects = () => {
     if (autoScroll) {
       interval = setInterval(() => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length);
-      }, 6000);
+      }, 9000);
     }
     return () => clearInterval(interval);
   }, [autoScroll, projects.length]);
