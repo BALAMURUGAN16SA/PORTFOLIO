@@ -5,7 +5,7 @@ import '../styles/Competitions.css';
 const competitions = [
   {
     id: "bytebash",
-    title: "ByteBash (Hackathon) Winner - Kurukshetra'25",
+    title: "ByteBash (Hackathon) Winner - Kurukshetra'25 Tech Fest",
     description: "National-level hackathon, where we built an Adaptive Assessment System using LLM.",
     date: "Feb 2025",
     image: "images/CO1.jpg",
