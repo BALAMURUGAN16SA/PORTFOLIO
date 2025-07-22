@@ -35,7 +35,8 @@ const projects = [
     description: "Built a booking system with user registration, ticket booking, and seat selection. Admin panel for theater management.",
     links: [
       { label: "Github", url: "https://github.com/BALAMURUGAN16SA/MOVIE_TICKETS_BOOKING/blob/updated" },
-      { label: "View Project", url: "https://drive.google.com/drive/folders/16VhZIcVPA2lbiQQFT-74fzWj9d_jyYY9" }
+      { label: "Live App", url: "https://movie-tickets-booking-balamurugan16sas-projects.vercel.app/"},
+      { label: "Demo Video", url: "https://drive.google.com/drive/folders/16VhZIcVPA2lbiQQFT-74fzWj9d_jyYY9" }
     ],
     image: "images/PIC3.png"
   },
