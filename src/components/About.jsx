@@ -13,9 +13,6 @@ const About = () => {
         and integrating <span className="fw-bold" style={{color: "#7B61FF"}}>LLMs</span> into real-world apps.
         <br></br>
         <br></br>
-        Outside tech, I enjoy remixing tracks in DAWs — giving familiar tunes my own twist.
-        <br></br>
-        <br></br>
         Let's connect if you’d like to talk tech or collaborate on cool ideas!
       </p>
     </div>
