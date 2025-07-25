@@ -141,6 +141,9 @@ const Projects = () => {
         if (filter === 'deployed' && !project.deployed) {
           setFilter('all');
         }
+        setTimeout(() => {
+          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
     }
   }, [filter]);
@@ -159,6 +162,9 @@ const Projects = () => {
             if (filter === 'deployed' && !project.deployed) {
               setFilter('all');
             }
+            setTimeout(() => {
+              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
           }
         }
       }
