@@ -5,7 +5,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/Projects.css"; 
 
 const projects = [
-  {
+  {  
+    id: "apnp",
     title: "AI-Powered Nutrient Deficiency Detection and Improvement with Food Suggestions and Goal Tracking - APNP",
     date: "Feb 2025 - Startify Hackathon Finalist",
     tech: "React | Django | Streamlit | Gemini | Twilio",
@@ -18,6 +19,7 @@ const projects = [
     deployed: false
   },
   {
+    id: "chatpdfs",
     title: "ChatPDF - RAG on PDF, with OCR support",
     date: "Jul 2025",
     tech: "Tesseract | Langchain | Faiss | Streamlit | Gemini ",
@@ -31,6 +33,7 @@ const projects = [
     deployed: true
   },
   {
+    id: "movieapp",
     title: "Movie Ticket Booking System",
     date: "May 2024",
     tech: "React | Flask | Postgres | Bootstrap",
@@ -44,6 +47,7 @@ const projects = [
     deployed: true
   },
   {
+    id: "ptcc",
     title: "Python-to-C++ Converter",
     date: "Jul 2024",
     tech: "Lex & Yacc | C++",
@@ -56,6 +60,7 @@ const projects = [
     deployed: false
   },
   {
+    id: "gui",
     title: "GUI Apps using Tkinter",
     date: "Feb 2024",
     tech: "Python | Tkinter | API",
@@ -68,6 +73,7 @@ const projects = [
     deployed: false
   },
   {
+    id: "portfolio",
     title: "Portfolio Website",
     date: "Jul 2024",
     tech: "React | Bootstrap | JS",
@@ -116,6 +122,15 @@ const Projects = () => {
     return () => clearInterval(interval);
   }, [autoScroll, filteredProjects.length]);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    if (id) {
+      const index = projects.findIndex((p) => p.id === id);
+      if (index !== -1) setActiveIndex(index);
+    }
+  }, []);
+  
   return (
     <div className="projects" id="projects" style={{
       backgroundColor: "#222",
