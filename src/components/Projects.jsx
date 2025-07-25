@@ -123,13 +123,52 @@ const Projects = () => {
   }, [autoScroll, filteredProjects.length]);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
+    let params;
+    
+    if (window.location.hash.includes('?')) {
+      const hashParts = window.location.hash.split('?');
+      params = new URLSearchParams(hashParts[1]);
+    } else {
+      params = new URLSearchParams(window.location.search);
+    }
+    
     const id = params.get("id");
     if (id) {
       const index = projects.findIndex((p) => p.id === id);
-      if (index !== -1) setActiveIndex(index);
+      if (index !== -1) {
+        setActiveIndex(index);
+        const project = projects[index];
+        if (filter === 'deployed' && !project.deployed) {
+          setFilter('all');
+        }
+      }
     }
-  }, []);
+  }, [filter]);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash.includes('?')) {
+        const hashParts = window.location.hash.split('?');
+        const params = new URLSearchParams(hashParts[1]);
+        const id = params.get("id");
+        if (id) {
+          const index = projects.findIndex((p) => p.id === id);
+          if (index !== -1) {
+            setActiveIndex(index);
+            const project = projects[index];
+            if (filter === 'deployed' && !project.deployed) {
+              setFilter('all');
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange();
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [filter]);
   
   return (
     <div className="projects" id="projects" style={{
