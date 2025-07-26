@@ -21,11 +21,11 @@
 }
 
 .comp-section {
-  padding: 50px 25px;
+  padding: 50px 20px;
   background-color: #131a1b;
   color: antiquewhite;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 3rem;
   border-radius: 0.6rem;
   text-align: center;
 }
