@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
@@ -9,6 +9,8 @@ const Contact = () => {
   const [showForm, setShowForm] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
+  const formRef = useRef(null);
+  const buttonRef = useRef(null);
 
   const toggleForm = (e) => {
     e.stopPropagation();
@@ -17,18 +19,27 @@ const Contact = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      const form = document.getElementById('contact-form-container');
-      const button = document.getElementById('contact-button');
       if (
-        form && !form.contains(event.target) &&
-        button && !button.contains(event.target)
+        formRef.current && !formRef.current.contains(event.target) &&
+        buttonRef.current && !buttonRef.current.contains(event.target)
       ) {
         setShowForm(false);
       }
     };
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
-  }, []);
+
+    if (showForm) {
+      // Add a small delay to prevent immediate closing
+      setTimeout(() => {
+        document.addEventListener('click', handleClickOutside);
+      }, 100);
+    } else {
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [showForm]);
 
   const showToastMessage = (message) => {
     setToastMessage(message);
@@ -64,6 +75,10 @@ const Contact = () => {
         console.error('EmailJS Error:', error?.text || error);
         showToastMessage('Error sending message. Please try again.');
       });
+  };
+
+  const handleFormClick = (e) => {
+    e.stopPropagation();
   };
 
   return (
@@ -129,13 +144,15 @@ const Contact = () => {
           </a>
         </Col>
 
-        <Col sm onClick={toggleForm} className="contact-col p-3" id="msg">
+        <Col sm className="contact-col p-3" id="msg">
           <Button
+            ref={buttonRef}
             id="contact-button"
             variant="outline-success"
             aria-expanded={showForm}
             aria-controls="contact-form-container"
             className="d-flex align-items-center justify-content-center"
+            onClick={toggleForm}
           >
             <span className="fs-6 px-3 text-light">Message Me</span>
             <img
@@ -148,16 +165,33 @@ const Contact = () => {
           </Button>
 
           {showForm && (
-            <div id="contact-form-container" className="mt-3">
+            <div 
+              ref={formRef}
+              id="contact-form-container" 
+              className="mt-3"
+              onClick={handleFormClick}
+            >
               <Form id="contact-form" onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="name">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" name="name" placeholder="Your Name" required />
+                  <Form.Control 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your Name" 
+                    required 
+                    onClick={handleFormClick}
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="email">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" name="email" placeholder="Your Email" required />
+                  <Form.Control 
+                    type="email" 
+                    name="email" 
+                    placeholder="Your Email" 
+                    required 
+                    onClick={handleFormClick}
+                  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="message">
@@ -168,10 +202,11 @@ const Contact = () => {
                     rows={4}
                     placeholder="Your Message"
                     required
+                    onClick={handleFormClick}
                   />
                 </Form.Group>
 
-                <Button type="submit" variant="success">
+                <Button type="submit" variant="success" onClick={handleFormClick}>
                   Send
                 </Button>
               </Form>
