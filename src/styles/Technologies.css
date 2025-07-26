@@ -5,16 +5,15 @@
   margin: 0;
   margin-top: 1.2rem;
 }
-
 .section-header {
   font-size: 2rem;
   margin-bottom: 20px;
   color: antiquewhite !important;
   text-align: center;
   position: relative;
-  background-color: #131a1b !important;
+  background-color: 
+#131a1b !important;
 }
-
 .section-header::after {
   content: '';
   position: absolute;
@@ -23,9 +22,9 @@
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: #128C7E !important;
+  background: 
+#128C7E !important;
 }
-
 .tech-container {
   width: 100%;
   border: 1px solid grey;
@@ -38,25 +37,22 @@
   box-sizing: border-box;
   background-color: black !important;
 }
-
 .hh{
     margin-inline-start: 5rem !important;
     display: flex;
     align-items: center;
     justify-content: start;
 }
-
 .accordion {
   width: 100%;
 }
-
 .accordion-item {
   border-bottom: 2px solid grey;
 }
-
 .accordion-button {
   width: 100%;
-  background: #075E54 !important;
+  background: 
+#075E54 !important;
   color: #fff;
   border: none;
   outline: none;
@@ -70,19 +66,16 @@
   transition: background 0.2s;
   gap: 1rem;
 }
-
 .accordion-button.open,
 .accordion-button:focus,
 .accordion-button:hover {
   background: rgba(7,94,84,0.9);
   color: #fff;
 }
-
 .accordion-title {
   flex: 1;
   color: #fff;
 }
-
 .accordion-icon {
   width: 28px;
   height: 28px;
@@ -90,54 +83,49 @@
   object-fit: contain;
   margin-right: 1rem;
 }
-
 .accordion-indicator {
   display: flex;
   align-items: center;
   color: #fff;
   margin: 0 1rem;
 }
-
 .accordion-button::after {
   display: none !important;
 }
-
 .accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  background: #131a1b;
+  background: 
+#131a1b;
 }
-
 .accordion-content.show {
   max-height: 1000px;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .accordion-list {
   padding: 0.5rem 0;
   margin: 0;
   list-style: none;
 }
-
 .tech-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #131a1b !important;
-  border-bottom: 1px solid #128C7E !important;
+  background-color: 
+#131a1b !important;
+  border-bottom: 1px solid 
+#128C7E !important;
   padding: 0.7rem 0.5rem;
   width: 100%;
   max-width: 100%;
 }
-
 .col {
   padding: 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .col-name {
   flex: 0 0 25%;
   max-width: 25%;
@@ -147,19 +135,16 @@
   text-align: left !important;
   display: none;
 }
-
 .col-img {
   flex: 0 0 25%;
   max-width: 25%;
   justify-content: center;
 }
-
 .col-img img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-
 .col-desc {
   flex: 0 0 50%;
   max-width: 50%;
@@ -168,46 +153,21 @@
   text-align: left;
   justify-content: flex-start;
 }
-
 @media (min-width: 576px) {
   .col-name {
     display: flex;
   }
 }
-
 @media (max-width: 700px) {
-  .technology {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-top: 1.2rem;
-  }
-  
   .tech-container {
     max-width: 100vw;
-    width: 100%;
     padding: 0;
-    margin: 0;
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
   }
-  
-  .hh {
-    margin-inline-start: 1rem !important;
-    margin: 0.5rem 1rem !important;
-  }
-  
   .tech-row {
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.2rem;
   }
-  
   .col-img img {
     width: 28px;
     height: 28px;
-  }
-  
-  .accordion-button {
-    padding: 0.7rem 0.5rem;
   }
 }
