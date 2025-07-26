@@ -7,8 +7,8 @@
   border-radius: 0.6rem !important;
   box-shadow: 0 1px 7px antiquewhite;
   color: antiquewhite;
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .typed-text {

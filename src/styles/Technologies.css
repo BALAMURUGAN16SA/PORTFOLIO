@@ -30,8 +30,7 @@
 .tech-container {
   width: 100%;
   border: 1px solid grey;
-  border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
+  border-radius: 0.6rem !important;
   box-shadow: 0 1px 7px antiquewhite;
   color: antiquewhite;
   background: transparent;
