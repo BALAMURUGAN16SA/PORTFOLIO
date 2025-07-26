@@ -39,8 +39,8 @@ const projects = [
     tech: "React | Flask | Postgres | Bootstrap",
     description: "Built a booking system with user registration, ticket booking, and seat selection. Admin panel for theater management.",
     links: [
-      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/MOVIE_TICKETS_BOOKING/blob/updated" },
-      { label: "Live App", url: "https://movie-tickets-booking-balamurugan16sas-projects.vercel.app/"},
+      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/MOVIE_TICKETS_BOOKING.git" },
+      { label: "Live App", url: "https://balamurugan16sas-mtb.vercel.app/"},
       { label: "Demo Video", url: "https://drive.google.com/drive/folders/16VhZIcVPA2lbiQQFT-74fzWj9d_jyYY9" }
     ],
     image: "images/PIC3.png",
@@ -79,8 +79,8 @@ const projects = [
     tech: "React | Bootstrap | JS",
     description: "That's what you are looking at!",
     links: [
-      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/balamurugan16sa.github.io.git" },
-      { label: "Live App", url: "#" }
+      { label: "Github", url: "https://github.com/BALAMURUGAN16SA/PORTFOLIO.git" },
+      { label: "Live App", url: "https://balamurugan16sas-portfolio.vercel.app/" }
     ],
     image: "images/PIC6.png",
     deployed: true
