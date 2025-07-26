@@ -65,7 +65,7 @@
 .timeline-track {
   display: flex;
   justify-content: space-between;
-  gap: 65px !important;
+  gap: 70px !important;
   width: max-content;
 }
 
