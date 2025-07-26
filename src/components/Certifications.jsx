@@ -77,7 +77,7 @@ const Certifications = () => {
                   <button
                     className="cert-button fs-6"
                   >
-                    View Certificate
+                    More Info
                   </button>
                 </div>
 
