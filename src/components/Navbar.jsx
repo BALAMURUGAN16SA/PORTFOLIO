@@ -25,7 +25,7 @@ const Navbar = () => {
         <a href="#competitions" className="nav-link p-3">Competitions</a>
         <a href="#certifications" className="nav-link p-3">Certifications</a>
         <a href="#contact" className="nav-link p-3">Contact</a>
-        <a href="https://drive.google.com/file/d/1HFWGbNMvCjSxCufJpSCHpL8siSLoXgK4" target="_blank" className="nav-link p-3">Resume</a>
+        <a href="https://drive.google.com/file/d/1Hfyvm1MOqVrb2v-VxZs7nzYwnfg_6FOV/view?usp=drivesdk" target="_blank" className="nav-link p-3">Resume</a>
       </div>
     </nav>
   );
